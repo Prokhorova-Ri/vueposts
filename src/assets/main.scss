@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./bg.img) no-repeat center center fixed;
+  color: rgb(175, 175, 175);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.app {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+
+
