@@ -2,10 +2,14 @@
   <div>
     <div class="post">
       <div>
-        <div><strong>Название:</strong>{{ post.title }}</div>
-        <div><strong>Описание:</strong>{{ post.body }}</div>
+        <div>{{ post.id }}</div>
+        <div><strong>Название: </strong>{{ post.title }}</div>
+        <div><strong>Описание: </strong>{{ post.body }}</div>
       </div>
       <div class="btns__post">
+        <my-button @click="$router.push(`/posts/${post.id}`)"
+          >Открыть</my-button
+        >
         <my-button @click="$emit('remove', post)">Удалить</my-button>
       </div>
     </div>
